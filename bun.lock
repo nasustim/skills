@@ -9,7 +9,7 @@
         "textlint-filter-rule-comments": "1.3.0",
         "textlint-plugin-html": "1.0.1",
         "textlint-rule-common-misspellings": "1.0.1",
-        "textlint-rule-preset-ja-spacing": "3.0.0",
+        "textlint-rule-preset-ja-spacing": "3.0.4",
       },
     },
   },
@@ -496,6 +496,8 @@
 
     "textlint-rule-ja-no-space-around-parentheses": ["textlint-rule-ja-no-space-around-parentheses@3.0.4", "", { "dependencies": { "textlint-rule-helper": "^2.2.4" } }, "sha512-VYE5YXcI/DNvF67INXkJOmGYxqcGHcV9gpW2Fg9iW8cKzsEr36J1noVnjxynvSKMkSYK3m5oNhj2BIjcYNGUcw=="],
 
+    "textlint-rule-ja-no-space-around-slash": ["textlint-rule-ja-no-space-around-slash@3.0.4", "", { "dependencies": { "textlint-rule-helper": "^2.2.4" } }, "sha512-YjaFe0PJk+Hu9RhE1fgfVoQ8QMnRBXdd7pHq7NCv/ZlXojM1QOOTTkBtVUn3YLi9cejC6REwgLESYgY9MALhuQ=="],
+
     "textlint-rule-ja-no-space-between-full-width": ["textlint-rule-ja-no-space-between-full-width@3.0.4", "", { "dependencies": { "regx": "^1.0.4", "textlint-rule-helper": "^2.2.4" } }, "sha512-kIObqfsOYnaFS22nrLbVDXGl39J4J+GjM/UF4+qhSSlGY9V1wwvTxDe3q/NMFtLvu93kE+pFE2s7Bd8P3rNOgQ=="],
 
     "textlint-rule-ja-space-after-exclamation": ["textlint-rule-ja-space-after-exclamation@3.0.4", "", { "dependencies": { "textlint-rule-helper": "^2.2.4" } }, "sha512-HOxdaRME4Ni14Cw1qf0ixfH8sC0o42syLiiaSjNtnAZRG3U0dvexj990bLP9Jc/70NXgoQcFYij7CA1vF/1aKQ=="],
@@ -512,7 +514,7 @@
 
     "textlint-rule-ja-space-between-half-and-full-width": ["textlint-rule-ja-space-between-half-and-full-width@3.0.4", "", { "dependencies": { "@textlint/regexp-string-matcher": "^2.0.2", "textlint-rule-helper": "^2.2.4" } }, "sha512-hFQcUdaZhNSNcMosod8JrUQY+sYpoBGx+FvKU7vFG1gyHU1d+nuqQAZpA9mK4UDgDVfkllErKTg3NEO5L+/1Zw=="],
 
-    "textlint-rule-preset-ja-spacing": ["textlint-rule-preset-ja-spacing@3.0.0", "", { "dependencies": { "textlint-rule-ja-nakaguro-or-halfwidth-space-between-katakana": "^3.0.0", "textlint-rule-ja-no-space-around-parentheses": "^3.0.0", "textlint-rule-ja-no-space-between-full-width": "^3.0.0", "textlint-rule-ja-space-after-exclamation": "^3.0.0", "textlint-rule-ja-space-after-question": "^3.0.0", "textlint-rule-ja-space-around-code": "^3.0.0", "textlint-rule-ja-space-around-emphasis": "^3.0.0", "textlint-rule-ja-space-around-link": "^3.0.0", "textlint-rule-ja-space-around-strong": "^3.0.0", "textlint-rule-ja-space-between-half-and-full-width": "^3.0.0" } }, "sha512-Tbx0Nz6t5ZEYz9nSpiaBZp/GCBfKGVT6UrunlKDdT1GlHwgMbojX7vIXgxV789wKcH1d452eIb9uNAhUq3N8NA=="],
+    "textlint-rule-preset-ja-spacing": ["textlint-rule-preset-ja-spacing@3.0.4", "", { "dependencies": { "textlint-rule-ja-nakaguro-or-halfwidth-space-between-katakana": "^3.0.4", "textlint-rule-ja-no-space-around-parentheses": "^3.0.4", "textlint-rule-ja-no-space-around-slash": "^3.0.4", "textlint-rule-ja-no-space-between-full-width": "^3.0.4", "textlint-rule-ja-space-after-exclamation": "^3.0.4", "textlint-rule-ja-space-after-question": "^3.0.4", "textlint-rule-ja-space-around-code": "^3.0.4", "textlint-rule-ja-space-around-emphasis": "^3.0.4", "textlint-rule-ja-space-around-link": "^3.0.4", "textlint-rule-ja-space-around-strong": "^3.0.4", "textlint-rule-ja-space-between-half-and-full-width": "^3.0.4" } }, "sha512-cd4R4gfIntQBH25F0yDd0W8T5FTHaHWOqV9Wt+5lsMG0je74KlcAJjUgbQrmJJxVWZXMpV4A0Y7C1IUQlwIyTQ=="],
 
     "toidentifier": ["toidentifier@1.0.1", "", {}, "sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA=="],
 
@@ -586,6 +588,8 @@
 
     "textlint-rule-ja-no-space-around-parentheses/textlint-rule-helper": ["textlint-rule-helper@2.5.0", "", { "dependencies": { "@textlint/ast-node-types": "^15.2.1", "structured-source": "^4.0.0", "unist-util-visit": "^2.0.3" } }, "sha512-QIbFPtyqLy0g5BJn8mryk9iHzGYicNaFIpLFPiEnb4RXxrEGeQ2W2aARQ9yEXLIAqo+OwK4ndWBAWkbgJEPzTQ=="],
 
+    "textlint-rule-ja-no-space-around-slash/textlint-rule-helper": ["textlint-rule-helper@2.5.0", "", { "dependencies": { "@textlint/ast-node-types": "^15.2.1", "structured-source": "^4.0.0", "unist-util-visit": "^2.0.3" } }, "sha512-QIbFPtyqLy0g5BJn8mryk9iHzGYicNaFIpLFPiEnb4RXxrEGeQ2W2aARQ9yEXLIAqo+OwK4ndWBAWkbgJEPzTQ=="],
+
     "textlint-rule-ja-no-space-between-full-width/textlint-rule-helper": ["textlint-rule-helper@2.5.0", "", { "dependencies": { "@textlint/ast-node-types": "^15.2.1", "structured-source": "^4.0.0", "unist-util-visit": "^2.0.3" } }, "sha512-QIbFPtyqLy0g5BJn8mryk9iHzGYicNaFIpLFPiEnb4RXxrEGeQ2W2aARQ9yEXLIAqo+OwK4ndWBAWkbgJEPzTQ=="],
 
     "textlint-rule-ja-space-after-exclamation/textlint-rule-helper": ["textlint-rule-helper@2.5.0", "", { "dependencies": { "@textlint/ast-node-types": "^15.2.1", "structured-source": "^4.0.0", "unist-util-visit": "^2.0.3" } }, "sha512-QIbFPtyqLy0g5BJn8mryk9iHzGYicNaFIpLFPiEnb4RXxrEGeQ2W2aARQ9yEXLIAqo+OwK4ndWBAWkbgJEPzTQ=="],
@@ -622,6 +626,8 @@
 
     "textlint-rule-ja-no-space-around-parentheses/textlint-rule-helper/unist-util-visit": ["unist-util-visit@2.0.3", "", { "dependencies": { "@types/unist": "^2.0.0", "unist-util-is": "^4.0.0", "unist-util-visit-parents": "^3.0.0" } }, "sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q=="],
 
+    "textlint-rule-ja-no-space-around-slash/textlint-rule-helper/unist-util-visit": ["unist-util-visit@2.0.3", "", { "dependencies": { "@types/unist": "^2.0.0", "unist-util-is": "^4.0.0", "unist-util-visit-parents": "^3.0.0" } }, "sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q=="],
+
     "textlint-rule-ja-no-space-between-full-width/textlint-rule-helper/unist-util-visit": ["unist-util-visit@2.0.3", "", { "dependencies": { "@types/unist": "^2.0.0", "unist-util-is": "^4.0.0", "unist-util-visit-parents": "^3.0.0" } }, "sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q=="],
 
     "textlint-rule-ja-space-after-exclamation/textlint-rule-helper/unist-util-visit": ["unist-util-visit@2.0.3", "", { "dependencies": { "@types/unist": "^2.0.0", "unist-util-is": "^4.0.0", "unist-util-visit-parents": "^3.0.0" } }, "sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q=="],
@@ -649,6 +655,10 @@
     "textlint-rule-ja-no-space-around-parentheses/textlint-rule-helper/unist-util-visit/unist-util-is": ["unist-util-is@4.1.0", "", {}, "sha512-ZOQSsnce92GrxSqlnEEseX0gi7GH9zTJZ0p9dtu87WRb/37mMPO2Ilx1s/t9vBHrFhbgweUwb+t7cIn5dxPhZg=="],
 
     "textlint-rule-ja-no-space-around-parentheses/textlint-rule-helper/unist-util-visit/unist-util-visit-parents": ["unist-util-visit-parents@3.1.1", "", { "dependencies": { "@types/unist": "^2.0.0", "unist-util-is": "^4.0.0" } }, "sha512-1KROIZWo6bcMrZEwiH2UrXDyalAa0uqzWCxCJj6lPOvTve2WkfgCytoDTPaMnodXh1WrXOq0haVYHj99ynJlsg=="],
+
+    "textlint-rule-ja-no-space-around-slash/textlint-rule-helper/unist-util-visit/unist-util-is": ["unist-util-is@4.1.0", "", {}, "sha512-ZOQSsnce92GrxSqlnEEseX0gi7GH9zTJZ0p9dtu87WRb/37mMPO2Ilx1s/t9vBHrFhbgweUwb+t7cIn5dxPhZg=="],
+
+    "textlint-rule-ja-no-space-around-slash/textlint-rule-helper/unist-util-visit/unist-util-visit-parents": ["unist-util-visit-parents@3.1.1", "", { "dependencies": { "@types/unist": "^2.0.0", "unist-util-is": "^4.0.0" } }, "sha512-1KROIZWo6bcMrZEwiH2UrXDyalAa0uqzWCxCJj6lPOvTve2WkfgCytoDTPaMnodXh1WrXOq0haVYHj99ynJlsg=="],
 
     "textlint-rule-ja-no-space-between-full-width/textlint-rule-helper/unist-util-visit/unist-util-is": ["unist-util-is@4.1.0", "", {}, "sha512-ZOQSsnce92GrxSqlnEEseX0gi7GH9zTJZ0p9dtu87WRb/37mMPO2Ilx1s/t9vBHrFhbgweUwb+t7cIn5dxPhZg=="],
 
