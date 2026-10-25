@@ -1,0 +1,7 @@
+# APM dependencies and build artifacts
+apm_modules/
+build/
+
+# OS files
+.DS_Store
+
