@@ -1,1 +1,1 @@
-# skills
+# @nasustim/skills
