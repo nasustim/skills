@@ -1,0 +1,9 @@
+# APM dependencies and build artifacts
+apm_modules/
+build/
+
+# Node / Bun dependencies
+node_modules/
+
+# OS files
+.DS_Store

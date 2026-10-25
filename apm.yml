@@ -1,0 +1,14 @@
+name: skills
+version: 0.1.0
+description: Personal collection of AI agent skills by nasustim
+author: nasustim
+license: MIT
+repository: https://github.com/nasustim/skills
+
+dependencies:
+  apm: []
+  mcp: []
+
+includes: auto
+scripts: {}
+

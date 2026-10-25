@@ -1,0 +1,61 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".apm/**"
+      - "apm.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Determine next version and create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TZ: Asia/Tokyo
+        run: |
+          set -euo pipefail
+
+          if git tag --points-at HEAD | grep -Eq '^v[0-9]{8}(-[0-9]+)?$'; then
+            echo "HEAD is already tagged; skipping release."
+            exit 0
+          fi
+
+          BASE_TAG="v$(date +%Y%m%d)"
+
+          if ! git rev-parse -q --verify "refs/tags/${BASE_TAG}" >/dev/null; then
+            NEXT_TAG="${BASE_TAG}"
+          else
+            MAX_SUFFIX=$(
+              git tag -l "${BASE_TAG}-*" \
+                | sed -nE "s/^${BASE_TAG}-([0-9]+)$/\1/p" \
+                | sort -n \
+                | tail -n 1
+            )
+            NEXT_SUFFIX=$(( ${MAX_SUFFIX:-0} + 1 ))
+            NEXT_TAG="${BASE_TAG}-${NEXT_SUFFIX}"
+          fi
+
+          echo "Creating release ${NEXT_TAG}..."
+          gh release create "${NEXT_TAG}" \
+            --target "${GITHUB_SHA}" \
+            --title "${NEXT_TAG}" \
+            --generate-notes
